@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todolist.css">
+
+</head>
+<body>
+    <header id="header">
+        <h1>Todo List</h1>
+        <div id="control">
+            <button id="add">+add</button>
+            <select id="selector" value="choose a project">
+                <option  >ShowAll</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <section id="taskList">
+            <h2>Tasks:</h2>
+            <div id="tasks">
+                <!-- <div class="task">
+                    <div class="content">
+                        <p>My shiny task</p>
+                        <div class="adjust">
+                            <button class="Delete">Delete</button>
+                            <button class="Details">Details</button>
+                        </div>
+                        <input type="checkbox" id="checkbox">
+                 </div>
+                 <div class="hiddenDetails">
+                    <h2>my shiny task</h2>
+                    <div class="task-info Details">
+                        <label for ="project-name ">Project name:</label>
+                        <input type="text"  id="project-name" value="project 1" readonly>
+                    </div>
+                    <div class="task-info Details">
+                        <label for="deadline">Deadline:</label>
+                        <input type="date" id="deadline" readonly>
+                    </div>
+                    <div class="task-info textarea Details">
+                        <label for="task-description">Description:</label>
+                        <textarea id="task-description" value="some details about the task" readonly>
+                        </textarea>
+                    </div>
+                    <div class="escapeButtons">
+                    <button>Edit</button>
+                    <button>Cancel</button>
+                    </div>
+
+                 </div> -->
+            </div>      
+        </section>
+    </main>
+<div class="popup-container">
+    <div class="popup">
+        <form>
+        <div class="task-info">
+            <label for="task-name">Task name:</label>
+            <input type="text"  id="task-name">
+        </div>
+        <div class="task-info">
+            <label for ="project-name">Project name:</label>
+            <input type="text"  id="project-name">
+        </div>
+        <div class="task-info">
+            <label for="deadline">Deadline:</label>
+            <input type="date" id="deadline">
+        </div>
+        <div class="task-info textarea">
+            <label for="task-description">Description:</label>
+            <textarea id="task-description">
+            </textarea>
+        </div>
+        <input type="submit" value="Submit Task" id="submit">
+    </form>
+    <p id="close">&times;</p>
+    </div>
+    
+</div>
+<script src="arrangeTime.js" type="module"></script>
+<script src="todolist.js" type="module"></script>
+</body>
+</html>

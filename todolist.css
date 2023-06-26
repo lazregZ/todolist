@@ -1,0 +1,245 @@
+:root{
+    --darkest: #E4572E;
+    --white: #fff;
+    --brownSugar : #B86F52;
+    --green: #49a078;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 3px;
+    font-family: Arial, Helvetica, sans-serif;   
+
+
+     
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--darkest);
+    margin: 0
+}
+
+header{
+    padding: 1rem 1rem;
+    max-width: 800px;
+    width:100%;
+    margin: 0 auto;
+}
+
+#taskList{
+    padding: 0 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto
+}
+
+.task{
+    display: block
+}
+
+
+header h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+
+}
+#control > p{
+    font-size: 2rem;
+    color: var(--brownSugar);
+    cursor: pointer;
+    border-bottom: 1px solid var(--brownSugar);
+}
+
+
+#control{
+    display: flex;
+    justify-content: space-between
+}
+
+.content > p{
+    background-color: #fff;
+    padding: 10px 10px;
+    border-radius: 1rem;
+    width: 50%;
+    font-size: 1.125rem;
+    
+
+}
+
+#taskList > h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--white);
+}
+
+button{
+    border-radius: 10px;
+    height: 30px;
+    font-weight: 200;
+    margin-left: 0.5rem;
+
+
+}
+select{
+    border-radius: 10px;
+    font-size: 1.25rem;
+}
+#checkbox{
+    margin-left: 1rem;
+    width:40px;
+    height:40px;
+}
+
+#add,#selector {
+    background: white;
+    padding: 5px;
+    border-radius: 7px;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    /* font-weight: 200; */
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    height: fit-content;
+    text-decoration: none;
+    box-shadow: 6px 6px 10px -4px rgba(0, 0, 0,0.75)
+
+}
+button:hover{
+    cursor: pointer;
+    background-color: #59656F;
+    color: #fff;
+    transition: 0.4s;
+
+}
+.popup-container{
+    background: rgba(0, 0, 0,0.6);
+    width:100%;
+    height:100%;
+    position:absolute;
+    /* here the position property plays a big role in the overall design */
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.popup{
+    width: 500px;
+    height: 300px;
+    background: white;
+    border-radius: 5px;
+    position: relative;
+    display:flex
+
+
+}
+form{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 20px;
+
+}
+form > div > input{
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 4px;
+    height:1.5rem;
+    font-size: 1rem;
+    border: 1px solid black
+    ;
+}
+form >div> label{
+    font-size: 1.125rem;
+    font-weight: 200;
+
+}
+#submit{
+    width: 50%;
+    margin: 0 auto;
+
+}
+#task-description{
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 4px;
+}
+#close{
+    position: absolute;
+    top: -28px;
+    right: -11px;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+.hiddenDetails{
+    border: 1px solid blue;
+    height: fit-content;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    display: none;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 10px 0;
+    position: relative;
+
+}
+.hiddenDetails > h2{
+    text-align: center;
+    margin-bottom: 7px;
+    font-size: 2rem;
+}
+.Details >input{
+    border: none;
+    font-size: 1.25rem;
+}
+.Details > label{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+.Details{
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+/* .hiddenDetails > button{
+    position: absolute;
+    
+} */
+.escapeButtons{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 7px
+}
+
+
+#task-hello{
+    background-color: aqua;
+}
+
+/* .bar{
+    width: 264px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    top: 19px;
+    right: 269px;
+} */
